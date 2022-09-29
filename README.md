@@ -8,3 +8,6 @@ de labirinto, onde o objetivo é atingir o fim do labirinto. Para isso teremos d
 teclas de movimento o outro possui controle a partir das teclas WASD. Com isso temos a 
 implementação de threads (jogadores), sincronização (percorrer o labirinto) e escalonamento
 de tarefas (jogador A ou B se move).
+
+Threads para que cada jogador exista ao mesmo tempo.
+E lock para acesso da região crítica que é a linha de chegada.
