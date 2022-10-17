@@ -137,8 +137,8 @@ def main():
     # # gfxdraw.filled_circle(screen, 255, 200, 5, (0,128,0))
     # pygame.display.flip()
 
-    playerOne = Thread(target = GameOn(1, end_rect, random.randint(100, 255), random.randint(100, 255)))
-    playerTwo = Thread(target = GameOn(2, end_rect, random.randint(100, 255), random.randint(100, 255)))
+    playerOne = Thread(target = GameOn, args = (1, end_rect, random.randint(100, 255), random.randint(100, 255)))
+    playerTwo = Thread(target = GameOn, args = (2, end_rect, random.randint(100, 255), random.randint(100, 255)))
 
     playerOne.start()
     print("Debug\n")
